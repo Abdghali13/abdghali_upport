@@ -4,70 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pic Quest Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e9ecef; /* Light background for contrast */
-            color: #343a40; /* Dark text for readability */
-            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #4a4a4a;
         }
         header {
-            background-color: #007BFF; /* Blue background */
-            color: #ffffff; /* White text */
-            padding: 30px 0;
+            background-color: #5c85d6;
+            color: #ffffff;
+            padding: 40px 0;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100%;
+            height: 20px;
+            background-color: #ffffff;
+            clip-path: ellipse(50% 100% at 50% 0);
         }
         h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            font-weight: 500;
         }
         h2 {
-            color: #007BFF; /* Consistent heading color */
-            margin-top: 20px;
+            color: #5c85d6;
+            margin: 40px 0 20px;
+            font-weight: 500;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff; /* White container */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-            border-radius: 8px; /* Rounded corners */
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         p {
-            margin: 10px 0;
-            font-size: 1rem; /* Font size for readability */
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 15px 0;
         }
         ul {
-            list-style: none; /* Remove bullets */
+            list-style: none;
             padding: 0;
         }
         li {
-            background-color: #f8f9fa; /* Light gray background for list items */
+            background-color: #eeeeee;
             margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth background change */
+            padding: 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
         }
         li:hover {
-            background-color: #e2e6ea; /* Darker gray on hover */
+            background-color: #d8e2f1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        strong {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
         }
         a {
-            color: #007BFF; /* Link color */
-            text-decoration: none; /* Remove underline */
-            font-weight: bold; /* Bold links */
+            color: #5c85d6;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
         }
         a:hover {
-            text-decoration: underline; /* Underline on hover */
+            color: #2d5f9a;
         }
         footer {
-            margin-top: 20px;
+            margin-top: 40px;
             text-align: center;
             font-size: 0.9rem;
-            color: #666; /* Gray text for footer */
-            padding: 10px 0;
+            color: #757575;
+            padding: 20px 0;
+            background-color: #ffffff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
         }
     </style>
 </head>
@@ -76,19 +98,19 @@
         <h1>Welcome to Pic Quest Support!</h1>
     </header>
     <div class="container">
-        <p>If you have questions or need help, you've come to the right place.</p>
+        <p>We are here to help you with any questions or concerns. Check out our FAQs or contact us directly for assistance.</p>
         <h2>Frequently Asked Questions (FAQs)</h2>
         <ul>
             <li>
-                <strong>How do I contact support?</strong><br>
+                <strong>How do I contact support?</strong>
                 You can reach us at <a href="mailto:abdghali13@gmail.com">abdghali13@gmail.com</a>.
             </li>
             <li>
-                <strong>How do I report a bug?</strong><br>
+                <strong>How do I report a bug?</strong>
                 Please open an issue on our <a href="https://github.com/Abdghali13/pic_quest/issues">GitHub repository</a>.
             </li>
             <li>
-                <strong>Where can I find user guides?</strong><br>
+                <strong>Where can I find user guides?</strong>
                 Visit our <a href="https://github.com/Abdghali13/pic_quest/wiki">Wiki</a> for user guides and documentation.
             </li>
         </ul>
